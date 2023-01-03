@@ -1,5 +1,5 @@
 const config = {
-    siteTitle: 'Niedrrr Blog',
+    siteTitle: 'Nied Blog',
     siteDescription:
       'O melhor blog de programação do Brasil tem nome, é Nied Blog.',
     siteTitleShort: 'NIed Blog BR',
