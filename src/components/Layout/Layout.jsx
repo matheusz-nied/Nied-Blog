@@ -5,18 +5,23 @@ import Helmet from "react-helmet";
 import favicon from "../../../static/favicon.jpg";
 import config from "../../../data/config";
 import "./Layout.scss";
+import ParallaxContainer from "../ParallaxContainer";
+import Footer from "../Footer/Footer";
 
 const Layout = ({ children, title }) => (
-    <div>
+    <>
         <Helmet>
             <meta name="description" content={config.siteDescription} />
             <link rel="icon" href={favicon} />
         </Helmet>
-        <Header title={title} />
+        <Header/>
+        <ParallaxContainer/>
         <main role="main">
             <Container>{children}</Container>
         </main>
-    </div>
+        <Footer/>
+
+    </>
 );
 
 export default Layout;

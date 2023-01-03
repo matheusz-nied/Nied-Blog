@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import config from "../../../data/config";
 
-export default ({ title, description, url, article }) => {
+const SEO =({ title, description, url, article }) => {
     const seo = {
         title: title ? `${title} | ${config.siteTitle}` : config.siteTitle,
         description: description || config.siteDescription,
@@ -39,3 +39,5 @@ export default ({ title, description, url, article }) => {
         </React.Fragment>
     );
 };
+
+export default SEO
