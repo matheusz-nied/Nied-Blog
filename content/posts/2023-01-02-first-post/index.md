@@ -10,4 +10,4 @@ tags:
 
 Aqui vai todo o conteúdo do seu blog, e você pode editar e escrever da maneira que mais gostar. Agora, como todo site deve ter, bora colocar um lorem ipsum:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt hendrerit purus at elementum. Quisque sit amet malesuada felis. Proin ac fermentum lacus. Duis libero magna, iaculis ac semper id, volutpat ac mauris. Pellentesque ultricies lectus ut lectus eleifend fringilla. Nunc laoreet placerat pretium. Phasellus nec ultricies sem. Nunc pharetra ullamcorper elementum. Sed eget sem et nibh volutpat pharetra vel ac enim.
+Hoje em dia, muitas empresas utilizam serviços como a Remote, Deel, Lano, entre outras. Esses serviços, de forma bem resumida, permitem que empresas de qualquer local do mundo contratem funcionários de praticamente qualquer país. Essas plataformas vão se adequar a todas às legislações trabalhistas locais e assumir o contrato com o funcionário, no caso você. Portanto, a empresa que você trabalha, tem somente um custo de mensalidade com o serviço, e você vai receber seu salário na moeda local, que no nosso caso é o Real.

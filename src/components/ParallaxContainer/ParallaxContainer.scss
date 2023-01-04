@@ -1,10 +1,29 @@
 .parallaxcont{
   margin-top:0;
-  transform: translateY(-5rem);
+  transform: translateY(-12rem);
 }
 .background-image {
   background: url("../../../static/induBest.png") #FFEE99 center repeat;
-height: 40rem;
+height: 46rem;
 width: 100%;
+align-items: center;
+
+p {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 2.75rem;
+  padding: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: rgb(214, 216, 224);
+  text-shadow: rgb(3, 3, 3) 1px 2px 3px;
+  margin-bottom: 5rem;
+  margin-top: 17rem;
+  @media screen and (max-width: 768px) {
+    margin-top: 14rem;
+  }
+}
+
 
 }

@@ -36,12 +36,12 @@ module.exports = {
     icon: "static/favicon.jpg",
   },
 },
-// {
-//   resolve: "gatsby-plugin-google-analytics",
-//   options: {
-//     trackingId: config.googleAnalyticsID,
-//   },
-// },
+{
+  resolve: "gatsby-plugin-google-analytics",
+  options: {
+    trackingId: config.googleAnalyticsID,
+  },
+},
 {
   resolve: `gatsby-plugin-feed`,
   options: {

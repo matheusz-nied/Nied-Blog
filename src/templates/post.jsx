@@ -12,8 +12,10 @@ export default class Post extends Component {
     const { slug } = fields;
     const { title, tags, date, description } = data.markdownRemark.frontmatter;
     const { html } = data.markdownRemark;
+
+    
     return (
-      <Layout>
+      <Layout marginTop="-37rem">
         <div
           style={{
             backgroundColor: '#FFF',
