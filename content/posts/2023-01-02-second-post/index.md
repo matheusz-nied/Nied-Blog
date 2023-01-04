@@ -3,6 +3,7 @@ title: 'Nosso Segundo post'
 date: '2019-02-28'
 description: 'Illas semine campoque declivia oppida corpora nam inter fuit discordia tellus solidumque iunctarum erat: quae terrenae ubi rerum recessit'
 draft: false
+nameImage: 'space6.jpg'
 tags:
   - Blog
   - Primeiro post

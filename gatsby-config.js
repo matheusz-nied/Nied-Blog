@@ -8,6 +8,7 @@ module.exports = {
     title: config['siteTitle'],
     description: config['siteDescription'],
     siteUrl: config['siteUrl'],
+
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -33,7 +34,7 @@ module.exports = {
     background_color: config.backgroundColor,
     theme_color: config.themeColor,
     display: "standalone",
-    icon: "static/favicon.jpg",
+    icon: "static/favicon.png",
   },
 },
 {

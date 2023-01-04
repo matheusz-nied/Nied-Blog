@@ -2,8 +2,11 @@
     max-width: 980px;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
     flex-direction: row;
     margin: 0 auto;
-
+    @media screen and (max-width: 768px) {
+      padding-right: 1px;
+      padding-left: 1px;    }
   }

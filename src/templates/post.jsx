@@ -13,16 +13,17 @@ export default class Post extends Component {
     const { title, tags, date, description } = data.markdownRemark.frontmatter;
     const { html } = data.markdownRemark;
 
-    
+    console.log(date)
     return (
       <Layout marginTop="-37rem">
         <div
           style={{
             backgroundColor: '#FFF',
             width: '100%',
-            padding: '1.5rem',
+            paddingRight: '.5rem',
+            paddingLeft: '.5rem',
             borderRadius: '0.50rem',
-            margin: '10px 15px',
+            marginTop: '3rem',
           }}
         >
           <SEO title={title} url={slug} description={description} article />

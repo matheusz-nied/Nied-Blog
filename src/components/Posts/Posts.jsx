@@ -7,9 +7,15 @@ const Posts = ({ data }) => {
     const posts = edges.map(({ node }) => (
         <Link to={node.fields.slug} className="post-title">
             <div key={node.fields.slug} className="post">
-                <h2>{node.frontmatter.title}</h2>
-                <p className="post-date">{node.frontmatter.date}</p>
-                <p>{node.frontmatter.description}</p>
+                
+                <div>
+                    <img src="" />
+                </div>
+                <div>
+                    <h2>{node.frontmatter.title}</h2>
+                    <p className="post-date">{node.frontmatter.date}</p>
+                    <p>{node.frontmatter.description}</p>
+                </div>
             </div>
         </Link>
     ));

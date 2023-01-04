@@ -14,7 +14,6 @@ const Header = () => {
         }
     `);
 
-    console.log(data);
     return (
         <nav className="nav">
             <Link href="/" className="tittle">
