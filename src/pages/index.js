@@ -37,6 +37,17 @@ export const pageQuery = graphql`
                         tags
                         date(formatString: "DD/MM/YYYY")
                         description
+                        Imagez {
+                            childImageSharp {
+                              gatsbyImageData(
+                                width: 500
+                                blurredOptions: {width: 100}
+                                placeholder: BLURRED
+                                transformOptions: {cropFocus: CENTER}
+                                aspectRatio: 0.7
+                              )
+                            }
+                          }
                     }
                 }
             }

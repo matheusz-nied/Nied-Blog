@@ -58,3 +58,5 @@ Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cl
 - O Lighthouse é uma ferramenta automatizada de código aberto que aprimora a qualidade de apps da Web. Ele pode ser executado como extensão do Chrome ou na linha de comando. Informe ao Lighthouse um URL que você quer auditar. Ele executará uma série de testes na página e gerará um relatório sobre o desempenho da página. Nesse relatório, você poderá usar os testes que apresentaram falha como indicadores do que pode ser feito para aprimorar o aplicativo.
 
 <a target="_blank" href="https://icons8.com/icon/26309/eletr%C3%B4nicos">Eletrônicos</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+$ npm cache clear --force
