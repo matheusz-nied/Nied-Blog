@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import favicon from "../../../static/favicon.png";
 import config from "../../../data/config";
 import "./Layout.scss";
+import "./Post.scss";
 import ParallaxContainer from "../ParallaxContainer";
 import Footer from "../Footer/Footer";
 import ShadowContainer from "../ShadowContainer";

@@ -1,0 +1,32 @@
+.tittlePost {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+    margin-bottom: 1.9rem;
+}
+.dateTag {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.espacamento {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.tagPost {
+    text-decoration: underline;
+    
+}
+.imagePost {
+    box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+    margin-top: 1.4rem;
+    margin-bottom: 3rem;
+    img {
+        border-radius: 5px;
+
+    }
+}

@@ -1,5 +1,5 @@
 ---
-title: 'Nosso Segundo post'
+title: 'A influência do dólar na vida do brasileiro'
 date: '2019-02-28'
 description: 'Illas semine campoque declivia oppida corpora nam inter fuit discordia tellus solidumque iunctarum erat: quae terrenae ubi rerum recessit'
 draft: false

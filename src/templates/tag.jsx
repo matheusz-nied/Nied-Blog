@@ -40,10 +40,22 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          frontmatter {
+          frontmatter {            
             title
             date(formatString: "DD/MM/YYYY")
             description
+            Imagez {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 1200
+                  height: 600
+                  blurredOptions: {width: 100}
+                  placeholder: BLURRED
+                  transformOptions: {cropFocus: CENTER}
+                  aspectRatio: 0.7
+                )
+              }
+            }
           }
         }
       }

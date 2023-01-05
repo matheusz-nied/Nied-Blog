@@ -7,7 +7,7 @@ const ParallaxContainer = ({ text = "" }) => {
         <div className="parallaxcont">
             <Parallax className="" speed={-25}>
                 <div className="background-image">
-                <p>{text}</p>
+                <p  className="text-logo">{text}</p>
 
                 </div>
             </Parallax>

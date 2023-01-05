@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import _ from "lodash";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO/SEO";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default class Post extends Component {
     render() {
@@ -13,8 +14,7 @@ export default class Post extends Component {
             data.markdownRemark.frontmatter;
         const { html } = data.markdownRemark;
 
-        
-
+        console.log(data);
         return (
             <Layout marginTop="-37rem">
                 <div
@@ -33,21 +33,35 @@ export default class Post extends Component {
                         description={description}
                         article
                     />
-                    <h2 style={{ fontSize: "22px", fontWeight: "bold" }}>
-                        {title}
-                    </h2>
-                    <p>
-                        {tags.map((tag) => (
-                            <Link
-                                style={{ color: "#000", marginRight: "10px" }}
-                                key={tag}
-                                to={`/tag/${_.kebabCase(tag)}`}
-                            >
-                                {tag}
-                            </Link>
-                        ))}
-                    </p>
-                    <p>{date}</p>
+                    <h2 className="tittlePost">{title}</h2>
+                    <div className="dateTag">
+                            <p>{date} </p>
+                            <span className="espacamento"> • </span>
+                            <p className="tagPost">
+                                {tags.map((tag) => (
+                                    <Link
+                                        style={{
+                                            color: "#000",
+                                            marginRight: "10px",
+                                        }}
+                                        key={tag}
+                                        to={`/tag/${_.kebabCase(tag)}`}
+                                    >
+                                        {tag}
+                                    </Link>
+                                ))}
+                            </p>{" "}
+                        </div>
+                    <div className="imagePost">
+                        
+                        <GatsbyImage
+                            image={getImage(
+                                data.markdownRemark.frontmatter.Imagez
+                            )}
+                            alt={data.markdownRemark.frontmatter.title}
+                        />
+                    </div>
+
                     <div className="content">
                         <p dangerouslySetInnerHTML={{ __html: html }} />
                     </div>
@@ -68,6 +82,18 @@ export const pageQuery = graphql`
                 date(formatString: "DD/MM/YYYY")
                 tags
                 description
+                Imagez {
+                    childImageSharp {
+                        gatsbyImageData(
+                            width: 1200
+                            height: 600
+                            blurredOptions: { width: 100 }
+                            placeholder: BLURRED
+                            transformOptions: { cropFocus: CENTER }
+                            aspectRatio: 0.7
+                        )
+                    }
+                }
             }
             fields {
                 slug

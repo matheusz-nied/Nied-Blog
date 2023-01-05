@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <nav className="nav">
-            <Link href="/" className="tittle">
+            <Link href="/" className="tittleLogo">
                 {data.site.siteMetadata.title}
             </Link>
                 <div className="containerLinks">
