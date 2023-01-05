@@ -10,7 +10,7 @@ export default class Index extends Component {
     render() {
         const { data } = this.props;
         return (
-            <Layout  marginTop="-19rem" text="Conteúdos sobre Ciência e Tecnologia">
+            <Layout  marginTop="-25rem" text="Conteúdos sobre Ciência e Tecnologia">
                 <SEO />
 
                 <Posts data={data} />
