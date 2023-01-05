@@ -11,7 +11,7 @@ export default class Index extends Component {
         const { data } = this.props;
         return (
             <Layout  marginTop="-19rem" text="Conteúdos sobre Ciência e Tecnologia">
-                <SEO title={"Nied Blog"} />
+                <SEO />
 
                 <Posts data={data} />
             </Layout>
@@ -40,7 +40,8 @@ export const pageQuery = graphql`
                         Imagez {
                             childImageSharp {
                               gatsbyImageData(
-                                width: 500
+                                width: 1200
+                                height: 600
                                 blurredOptions: {width: 100}
                                 placeholder: BLURRED
                                 transformOptions: {cropFocus: CENTER}

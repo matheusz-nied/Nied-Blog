@@ -9,22 +9,21 @@ import ParallaxContainer from "../ParallaxContainer";
 import Footer from "../Footer/Footer";
 import ShadowContainer from "../ShadowContainer";
 
-const Layout = ({ children, title,text, marginTop }) => (
+const Layout = ({ children, title, text, marginTop }) => (
     <>
         <Helmet>
             <meta name="description" content={config.siteDescription} />
             <link rel="icon" href={favicon} />
         </Helmet>
-        <Header/>
-        <ParallaxContainer text={text}/>
+        <Header />
+        <ParallaxContainer text={text} />
         <ShadowContainer marginTop={marginTop}>
-        <main role="main">
-            <Container>{children}</Container>
-        </main>
+            <main role="main">
+                <Container>{children}</Container>
+            </main>
         </ShadowContainer>
-       
-        <Footer/>
 
+        <Footer />
     </>
 );
 
