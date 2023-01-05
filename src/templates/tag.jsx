@@ -11,7 +11,7 @@ export default class Tag extends Component {
     const { tag } = pageContext;
     const { pathname } = this.props.location;
     return (
-      <Layout>
+      <Layout marginTop="-37rem">
         <div>
           <SEO
             title={`Tag: ${tag}`}
